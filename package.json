@@ -1,0 +1,26 @@
+{
+  "name": "claudia-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "deploy": "claudia create --version dev --region us-east-1 --api-module api",
+    "release": "claudia set-version --version production",
+    "update": "claudia update --cache-api-config claudiaCached"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "claudia": "^3.4.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.214.1",
+    "claudia-api-builder": "^3.0.2",
+    "claudia-bot-builder": "^3.0.0",
+    "huh": "^2.0.1",
+    "jwt-decode": "^2.2.0",
+    "lodash.isempty": "^4.4.0",
+    "minimal-request-promise": "^1.5.0",
+    "moment": "^2.21.0"
+  }
+}
